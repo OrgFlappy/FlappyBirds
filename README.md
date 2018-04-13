@@ -1,1 +1,3 @@
 # FlappyBirds
+
+Repositorio del grupo.
