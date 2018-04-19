@@ -7,15 +7,16 @@ public class moverColumnasScript : MonoBehaviour {
 
     public Vector3 velocidad;
     public Vector3 distanciaColumnas;
+   
    // public GUIText marcador;
-    //private bool sumarPuntos = true;
+   // private bool sumarPuntos = true;
     public bool inicio;
     public AudioClip sonidoPunto;
-    // private int puntos = 0;
+    private int puntos = 0;
 
     // Use this for initialization
     void Start () {
-		
+    
 	}
 	
 	// Update is called once per frame
@@ -41,10 +42,13 @@ public class moverColumnasScript : MonoBehaviour {
             //sumarPuntos = true;
         }
         if (this.transform.position.x <= -11f ) {
-            
-          //  int puntos = int.Parse(marcador.text) + 1;
-           // marcador.text = puntos.ToString();
-           // sumarPuntos = false;
+
+         
+     
+           //int puntos = int.Parse(marcador.text) + 1;
+          // marcador.text = puntos.ToString();
+           //sumarPuntos = false;
+
             ReproducirSonido(sonidoPunto);
             Debug.Log("puntos");
 

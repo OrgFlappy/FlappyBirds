@@ -21,14 +21,14 @@ public class flappyvuelo : MonoBehaviour
     public bool Fin = false;
     public bool inicio;
     public bool muerto = false;
-    public AudioClip Sonidoinicio;
-    public AudioClip Sonidosalto;
+    AudioSource salto;
+ 
 
     // Use this for initialization
     void Start()
     {
         ani = this.gameObject.GetComponent<Animator>();
-        ReproducirSonido(Sonidoinicio);
+       
     }
 
     // Update is called once per frame
@@ -37,13 +37,13 @@ public class flappyvuelo : MonoBehaviour
         //Si la persona presiona el boton de espacio o hace clic en la pantalla con el mouse
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
-            ReproducirSonido(Sonidosalto);
+           
             aleteo = true;
             
             inicio = true;
             columna1.inicio = true;
-            columna2.inicio = true;
-
+             columna2.inicio = true;
+            //salto.Play();
 
 
         }
@@ -151,12 +151,7 @@ public class flappyvuelo : MonoBehaviour
         }
     }
 
-    //Reproduce un efecto de sonido
-    private void ReproducirSonido(AudioClip clipOriginal)
-    {
-        // Como no es un sonido 3D la posicion no importa
-        AudioSource.PlayClipAtPoint(clipOriginal, transform.position);
-    }
+
     /*
         void OnCollisionEnter2D(Collision2D colision) {
 
