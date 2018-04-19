@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlapysegunOpcion", "Assembly-CSharp.csproj", "{B761C356-212B-DC16-3A28-17EA19F6D7D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B761C356-212B-DC16-3A28-17EA19F6D7D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B761C356-212B-DC16-3A28-17EA19F6D7D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B761C356-212B-DC16-3A28-17EA19F6D7D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B761C356-212B-DC16-3A28-17EA19F6D7D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
