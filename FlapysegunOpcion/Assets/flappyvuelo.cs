@@ -34,19 +34,20 @@ public class flappyvuelo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Si la persona presiona el boton de espacio o hace clic en la pantalla con el mouse
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
-        {
-           
-            aleteo = true;
-            
-            inicio = true;
-            columna1.inicio = true;
-             columna2.inicio = true;
-            //salto.Play();
+		if (!muerto) {
+			//Si la persona presiona el boton de espacio o hace clic en la pantalla con el mouse
+			if (Input.GetKeyDown (KeyCode.Space) || Input.GetMouseButtonDown (0)) {
+	           
+				aleteo = true;
+	            
+				inicio = true;
+				columna1.inicio = true;
+				columna2.inicio = true;
+				//salto.Play();
 
 
-        }
+			}
+		}
     }
 
     //Este es el update de la fisica, que es ligeramente mas lento que el update del juego
@@ -96,7 +97,7 @@ public class flappyvuelo : MonoBehaviour
             Fin = true;
             ani.SetTrigger("Fin");
             muerto = true;
-
+			GameControl.instance.BirdDied ();
         }
 
         //Al momento de caer, queremos ignorar la colision con el tubo de abajo
@@ -118,35 +119,18 @@ public class flappyvuelo : MonoBehaviour
             const int altoBoton = 60;
 
             // Dibujamos un boton  de Reinicio
-            if (GUI.Button(new Rect(Screen.width / 2 - (anchoBoton / 2), (1.5f * Screen.height / 3) -(altoBoton / 2), anchoBoton, altoBoton), "Reiniciar!"))
+            if (GUI.Button(new Rect(Screen.width / 2 - (anchoBoton / 2), (1.5f * Screen.height / 3) -(altoBoton / 2), anchoBoton, altoBoton), "1 Nivel"))
             {
                 Application.LoadLevel("escena1");
             }
             if (
-                GUI.Button(
-                new Rect(
-                Screen.width / 2 - (anchoBoton / 2),
-                (2 * Screen.height / 3) - (altoBoton / 2),
-                anchoBoton,
-                altoBoton
-                ),
-                "Puntajes!"
-                )
-                )
+                GUI.Button(new Rect(Screen.width / 2 - (anchoBoton / 2),(2 * Screen.height / 3) - (altoBoton / 2),anchoBoton,altoBoton),"2 Nivel"))
             {
+                Application.LoadLevel("escena2");
             }
-            if (
-                GUI.Button(
-                new Rect(
-                Screen.width / 2 - (anchoBoton / 2),
-                (2.5f * Screen.height / 3) - (altoBoton / 2),
-                anchoBoton,
-                altoBoton
-                ),
-                "Compartir!"
-                )
-                )
+            if (GUI.Button(new Rect(Screen.width / 2 - (anchoBoton / 2),(2.5f * Screen.height / 3) - (altoBoton / 2),anchoBoton,altoBoton),"3 Nivel"))
             {
+                Application.LoadLevel("escena3");
             }
         }
     }

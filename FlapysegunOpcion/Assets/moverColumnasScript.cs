@@ -11,7 +11,7 @@ public class moverColumnasScript : MonoBehaviour {
    // public GUIText marcador;
    // private bool sumarPuntos = true;
     public bool inicio;
-    public AudioClip sonidoPunto;
+    
     private int puntos = 0;
 
     // Use this for initialization
@@ -48,18 +48,12 @@ public class moverColumnasScript : MonoBehaviour {
            //int puntos = int.Parse(marcador.text) + 1;
           // marcador.text = puntos.ToString();
            //sumarPuntos = false;
-
-            ReproducirSonido(sonidoPunto);
+           
             Debug.Log("puntos");
 
    
         }
 
     }
-        //Reproduce un efecto de sonido
-     private void ReproducirSonido(AudioClip clipOriginal)
-    {
-        // Como no es un sonido 3D la posicion no importa
-        AudioSource.PlayClipAtPoint(clipOriginal, transform.position);
-    }
+     
 }

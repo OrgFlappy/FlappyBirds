@@ -4,4 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/acceso.unity
+    guid: 9a22a672622ce2c4ea8e17556451a694
+  - enabled: 1
+    path: Assets/escena1.unity
+    guid: 63488f995ccb1974bb82ab97967da580
+  - enabled: 1
+    path: Assets/escena2.unity
+    guid: 9d14af9f45e1d6849976dc45afca3839
+  - enabled: 1
+    path: Assets/escena3.unity
+    guid: f86f16b9e88900b489e11459060cb100

@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\moverColumnasScript.cs">
+    <Files>
+      <File FileName="Assets\GameControl.cs" Line="32" Column="77" />
+      <File FileName="Assets\Columna.cs" Line="9" Column="37" />
+      <File FileName="Assets\flappyvuelo.cs" Line="100" Column="1" />
+      <File FileName="Assets\moverColumnasScript.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
